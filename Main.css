@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Quicksand;
+    src: url("Font/Quicksand-Light.otf");
+}
+
+body{
+    overflow: hidden;
+}
+.background{
+    position: fixed;
+    width:100%;
+    height:100%;
+    bottom:0;
+    left:0;
+    background: url(background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera */
+    animation: fadein 3s;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* header*/
+
+.header{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    top: 0%;
+}
+.menu{
+    padding: 10px;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: 5%;
+    top: 15%;
+    background-color: rgb(74, 74, 74);
+    display: none;
+}
+.menu, a{
+    color: white;
+    font-family: Quicksand;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+#menuimage{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15%;
+    z-index: 8;
+}
+#menu{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+#menuimage:hover + .menu{
+    display: block;
+    width: 250px;
+    height: 100px;
+}
+.menu:hover{
+    display: block;
+    width: 250px;
+    height: 100px;
+}
+
+/* Main Body */
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Quicksand;
+    color: white;
+}
+#title{
+    background-color: rgb(74, 74, 74);
+    text-align: center;
+    font-size: 100px;
+}
+#name{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(74, 74, 74);
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    width: 40%;
+}
